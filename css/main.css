@@ -9,6 +9,8 @@
   --placeholder-color: rgba(117, 117, 117, 0.5);
   --bcg-grey-color: #f5f4fa;
   --main-bcg-color: #ffffff;
+  --primary-font-family: 'Roboto', sans-serif;
+  --secondary-font-family: 'Raleway', sans-serif;
   --transition-duration: 250ms;
   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -62,7 +64,7 @@ img {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--primary-font-family);
   color: var(--main-color);
 }
 
@@ -249,7 +251,7 @@ body {
   fill: #000000;
 }
 
-.modal-input:focus .modal-input-icon {
+.modal-input:focus + .modal-input-icon {
   fill: var(--accent-color);
 }
 
@@ -332,7 +334,7 @@ body {
 
 .logo {
   color: #000000;
-  font-family: Raleway, sans-serif;
+  font-family: var(--secondary-font-family);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
