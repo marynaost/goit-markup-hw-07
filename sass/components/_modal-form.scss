@@ -57,7 +57,7 @@
   background-size: contain;
   fill: #000000;
 
-  .modal-input:focus & {
+  .modal-input:focus + & {
     fill: var(--accent-color);
   }
 }
